@@ -1,24 +1,118 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <body>
+        <div className="backVideo">
+          <video muted loop autoPlay role="presentation" width="100%" height="100%">
+              <source src="/video/homePage.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+
+
+        <div className="content">
+          <div className="coverPage">
+
+            <section  className="logo">
+                <img src="logo.png" alt="logo" width="150px" height="160px"/>
+            </section>
+            <section className="menu">
+                <nav>
+                  <ul className="navBar-ul">
+                    <li>
+                      <a className="navBar-link" href="#service">Service</a>
+                    </li>
+                    <li>
+                      <a className="navBar-link" href="#">Team</a>
+                    </li>
+                    <li>
+                      <a className="navBar-link" href="#">Client</a>
+                    </li>
+                  </ul>
+                </nav>
+            </section>
+
+            <div class="mouse_scroll">
+              <div class="mouse">
+                <div class="wheel"></div>
+              </div>
+              <div>
+                <span class="m_scroll_arrows unu"></span>
+                <span class="m_scroll_arrows doi"></span>
+                <span class="m_scroll_arrows trei"></span>
+              </div>
+            </div>
+
+          </div>
+
+          <div className="info">
+            <a name="service"></a>
+            <div className="service">
+              <h2>Our Solution Services </h2>
+              <h4>The Future has Begun</h4>
+              <section className="service_info">
+                <h3>Smart Office</h3>
+                <p>5G/Internet/Customization/ Maintenance/Smart Office/ Cloud Server/IDC/VPN</p>
+              </section>
+              <section className="service_info">
+                <h3>Intelligent Building</h3>
+                <p>5G/IOT/AI Customized Solution /Visualization Management Platform for Leasing/Property/5G/Internet/IBMS system/Service Robot/Face recognition System for gateway/Camera/Building intelligence weak electricity</p>
+              </section>
+              <section className="service_info">
+                <h3>Smart City</h3>
+                <p>Smart Street Lights/IOT/Intelligent Parking/Ware house/Transportation/Environmental protection</p>
+              </section>
+            </div>
+
+            <div className="teaminfo">
+              <h2>Team</h2>
+
+
+
+            </div>
+
+            <div className="client">
+              <h2>Client</h2>
+              <img src="/cl/Picture1.png" width="100px" height="100px"/>
+              <img src="/cl/Picture2.png" width="140px" height="100px"/>
+              <img src="/cl/Picture3.png" width="100px" height="100px"/>
+              <img src="/cl/Picture4.png" width="140px" height="100px"/>
+              <img src="/cl/Picture5.png" width="100px" height="100px"/>
+              <img src="/cl/Picture6.png" width="100px" height="100px"/>
+              <img src="/cl/Picture7.png" width="100px" height="100px"/>
+              <img src="/cl/Picture8.png" width="100px" height="100px"/>
+              <img src="/cl/Picture9.png" width="100px" height="100px"/>
+              <img src="/cl/Picture10.png" width="100px" height="60px"/>
+              <img src="/cl/Picture11.png" width="300px" height="50px"/>
+
+            </div>
+
+            <div className="footer">
+              <section>
+                <img src="#" alt="small logo here"/>
+              </section>
+              <section>
+                <h5 className="footerTitle" id="footerStyle">ADRESSS</h5>
+                <p className="footerinfo" id="footerStyle">
+                  Room 811, No.1295 Lu jia bang Road<br />
+                  Huang Pu District, Shanghai
+                </p>
+              </section>
+              <section>
+                <h5 className="footerTitle" id="footerStyle">CONTACTS</h5>
+                <p className="classinfo" id="footerStyle">
+                  Twitter：smart space8<br />
+                  微信公众号：讯楼科技smartspace
+                </p>
+              </section>
+            </div>
+
+          </div>
+        </div>
+      </body>
     </div>
   );
 }

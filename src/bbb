@@ -1,0 +1,22 @@
+<div className="coverPage">
+  <div className="navBar">
+      <div className="logo">
+        <img src="logo.png" alt="logo" width="150px" height="160px"/>
+      </div>
+      <div className="menu">
+        <nav>
+          <ul className="navBar-ul">
+            <li>
+              <a className="navBar-link" href="#">HomePage</a>
+            </li>
+            <li>
+              <a className="navBar-link" href="#">HomePage</a>
+            </li>
+            <li>
+              <a className="navBar-link" href="#">HomePage</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+  </div>
+</div>
