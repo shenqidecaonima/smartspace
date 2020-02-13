@@ -69,15 +69,6 @@ a:hover{
   color: gold
 }
 
-.info{
-  position: relative;
-  width: 100%;
-  height: auto;
-  padding: 0;
-  margin: 0;
-  background-color: white;
-}
-
 .mouse_scroll {
 	display: block;
 	margin: 0 auto;
@@ -221,6 +212,61 @@ width: 24px;
 }
 
 h2 {margin-top: 0;}
+h4 {color: #e74c3c;}
+.info{
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+}
+.serviceContent{
+  display: flex;
+}
+.service_info {
+  width: 300px;
+  height: 350px;
+  margin: 50px;
+  box-shadow: 10px 10px 10px 10px grey;
+}
+
+.teaminfo {
+
+}
+.teamwrapper {
+  display: flex;
+
+}
+
+.teamContent1 {
+  background-image: url("/test1.jpg");
+  background-size: 300px, 400px;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 400px;
+  position: relative;
+  overflow-y: hidden;
+}
+
+.nameCard {
+  background-color: white;
+  height: 250px;
+  opacity: 0.7;
+  position: absolute;
+  bottom: -100px;
+  width: 100%;
+  z-index: 1;
+}
+
+.nameCard:hover {
+  transition: transform 0.3s;
+  transform: translateY(-100px);
+}
+
+table {
+  border-spacing: 20px;
+}
 
 .footer {
   position: relative;
@@ -229,6 +275,10 @@ h2 {margin-top: 0;}
   background-color: #232323;
   margin: 0;
   padding: 0;
+  display: flex;
+}
+#footerSection{
+  margin: 10px 60px 20px 60px
 }
 
 #footerStyle {
