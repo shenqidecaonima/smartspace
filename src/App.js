@@ -5,6 +5,11 @@ function App() {
   return (
     <div className="App">
       <body>
+
+        <div className="topBar">
+          <h1>This is top menu navBar</h1>
+        </div>
+
         <div className="backVideo">
           <video muted loop autoPlay role="presentation" width="100%" height="100%">
               <source src="/video/homePage.mp4" type="video/mp4" />
@@ -34,6 +39,7 @@ function App() {
                   </ul>
                 </nav>
             </section>
+
 
             <div className="mouse_scroll">
               <div className="mouse">
