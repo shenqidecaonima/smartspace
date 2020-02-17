@@ -75,7 +75,7 @@ function App() {
             </div>
 
             <div className="teaminfo">
-              <h2>TEAM</h2>
+              <h2 id="teamTitle">TEAM</h2>
               <div className="teamwrapper">
                 <div className="teamContent1">
                   <div className="nameCard">
