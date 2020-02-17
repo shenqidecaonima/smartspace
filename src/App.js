@@ -5,11 +5,6 @@ function App() {
   return (
     <div className="App">
       <body>
-
-        <div className="topBar">
-          <h1>This is top menu navBar</h1>
-        </div>
-
         <div className="backVideo">
           <video muted loop autoPlay role="presentation" width="100%" height="100%">
               <source src="/video/homePage.mp4" type="video/mp4" />
@@ -98,48 +93,44 @@ function App() {
             </div>
 
             <div className="client">
-              <h2>CLIENT</h2>
+              <div className="clientTitle">
+                <h2 id="h2">CLIENT</h2>
+              </div>
+
               <table align="center">
                 <tbody>
                 <tr>
                   <th>
-                    <img src="/cl/Picture1.png" width="100px" height="100px"/>
+                    <img src="/cl/Picture1.png" width="100px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture2.png" width="140px" height="100px"/>
+                    <img src="/cl/Picture2.png" width="160px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture3.png" width="100px" height="100px"/>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <img src="/cl/Picture4.png" width="140px" height="100px"/>
+                    <img src="/cl/Picture3.png" width="100px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture5.png" width="100px" height="100px"/>
+                    <img src="/cl/Picture4.png" width="140px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture6.png" width="100px" height="100px"/>
+                    <img src="/cl/Picture5.png" width="100px" height="100px" alt="client"/>
                   </th>
                 </tr>
                 <tr>
                   <th>
-                    <img src="/cl/Picture7.png" width="100px" height="100px"/>
+                    <img src="/cl/Picture7.png" width="100px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture8.png" width="100px" height="100px"/>
+                    <img src="/cl/Picture8.png" width="110px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture9.png" width="100px" height="100px"/>
-                  </th>
-                </tr>
-                <tr>
-                  <th>
-                    <img src="/cl/Picture10.png" width="100px" height="60px"/>
+                    <img src="/cl/Picture9.png" width="130px" height="100px" alt="client"/>
                   </th>
                   <th>
-                    <img src="/cl/Picture11.png" width="300px" height="50px"/>
+                    <img src="/cl/Picture10.png" width="140px" height="60px" alt="client"/>
+                  </th>
+                  <th>
+                    <img src="/cl/Picture6.png" width="100px" height="70px" alt="client"/>
                   </th>
                 </tr>
                 </tbody>
