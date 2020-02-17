@@ -56,8 +56,9 @@ function App() {
           <div className="info">
             <a name="service"></a>
             <div className="service">
-              <h2>OUR SOLUTION SERVICES</h2>
               <h4>The Future has Begun</h4>
+              <h2>OUR SOLUTION SERVICES</h2>
+
               <div className="serviceContent">
                 <section className="service_info">
                   <h3>Smart Office</h3>
@@ -94,7 +95,7 @@ function App() {
 
             <div className="client">
               <div className="clientTitle">
-                <h2 id="h2">CLIENT</h2>
+                <h2>CLIENT</h2>
               </div>
 
               <table align="center">
