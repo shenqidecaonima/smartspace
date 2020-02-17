@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html, body{
   height: 100%;
   width: 100%;
+  font-family: 'Rokkitt', serif;
 }
 .backVideo {
   position: fixed;
@@ -30,8 +34,8 @@ html, body{
   height: 950px;
   padding: 0,0,0,0;
   margin: 0,0,0,0;
-  background-color: rgba(0, 0, 0, .4);
-  background-image: linear-gradient(rgba(0, 0, 0, .4), white);
+  background-color: rgba(0, 0, 0, .2);
+  background-image: linear-gradient(rgba(0, 0, 0, .4), rgb(46,45,45));
 }
 
 .logo {
@@ -56,17 +60,19 @@ ul li {
 .navBar-link {
   position: relative;
   margin: 50px;
-  font-weight: bold;
 }
+
 a {
-  color:white;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
 }
 a:link {
   text-decoration: none;
 }
 a:hover{
   font-weight: bold;
-  color: gold
+  color: #957B5F;
 }
 
 .mouse_scroll {
@@ -211,31 +217,63 @@ width: 24px;
   100% { opacity: 1; }
 }
 
-h2 {margin-top: 0;}
-h4 {color: #e74c3c;}
+h2 {
+  margin-top: 0;
+  color: #957B5F;
+  margin-left: 150px;
+  font-size: 35px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 800;
+}
+h3 {
+  color: #957B5F;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+h4 {
+  color: white;
+}
+
 .info{
   position: relative;
   width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
-  background-color: white;
+  background-color: rgb(46,45,45);
+}
+
+.service {
+  position: relative;
+  padding: 100px;
 }
 .serviceContent{
   display: flex;
+  color: white;
+  text-align: center;
+  overflow: auto;
 }
 .service_info {
   width: 300px;
   height: 350px;
   margin: 50px;
-  box-shadow: 10px 10px 10px 10px grey;
+  box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, .5);
+  border: solid 1px black;
+  position: relative;
+}
+
+.service_info:hover{
+  border-width: 4px;
+  border-color: orange;
 }
 
 .teaminfo {
+  margin-bottom: 30px;
 
 }
 .teamwrapper {
   display: flex;
+  margin-left: 100px
 
 }
 

@@ -35,14 +35,14 @@ function App() {
                 </nav>
             </section>
 
-            <div class="mouse_scroll">
-              <div class="mouse">
-                <div class="wheel"></div>
+            <div className="mouse_scroll">
+              <div className="mouse">
+                <div className="wheel"></div>
               </div>
               <div>
-                <span class="m_scroll_arrows unu"></span>
-                <span class="m_scroll_arrows doi"></span>
-                <span class="m_scroll_arrows trei"></span>
+                <span className="m_scroll_arrows unu"></span>
+                <span className="m_scroll_arrows doi"></span>
+                <span className="m_scroll_arrows trei"></span>
               </div>
             </div>
 
@@ -51,7 +51,7 @@ function App() {
           <div className="info">
             <a name="service"></a>
             <div className="service">
-              <h2>Our Solution Services </h2>
+              <h2>OUR SOLUTION SERVICES</h2>
               <h4>The Future has Begun</h4>
               <div className="serviceContent">
                 <section className="service_info">
@@ -70,7 +70,7 @@ function App() {
             </div>
 
             <div className="teaminfo">
-              <h2>Team</h2>
+              <h2>TEAM</h2>
               <div className="teamwrapper">
                 <div className="teamContent1">
                   <div className="nameCard">
@@ -88,8 +88,9 @@ function App() {
             </div>
 
             <div className="client">
-              <h2>Client</h2>
+              <h2>CLIENT</h2>
               <table align="center">
+                <tbody>
                 <tr>
                   <th>
                     <img src="/cl/Picture1.png" width="100px" height="100px"/>
@@ -131,6 +132,7 @@ function App() {
                     <img src="/cl/Picture11.png" width="300px" height="50px"/>
                   </th>
                 </tr>
+                </tbody>
               </table>
             </div>
 
