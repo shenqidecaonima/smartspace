@@ -94,8 +94,8 @@ a:hover{
   -ms-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
-  border-right: 2px solid #000;
-  border-bottom: 2px solid #000;
+  border-right: 2px solid #957B5F;
+  border-bottom: 2px solid #957B5F;
   margin: 0 0 3px 4px;
   width: 16px;
   height: 16px;
@@ -141,7 +141,7 @@ height: 42px;
 width: 24px;
   border-radius: 14px;
   transform: none;
-  border: 2px solid #000;
+  border: 2px solid #957B5F;
   top: 170px;
 }
 
@@ -151,11 +151,11 @@ width: 24px;
   width: 2px;
   display: block;
   margin: 5px auto;
-  background: #000;
+  background: #957B5F;
   position: relative;
   height: 4px;
   width: 4px;
-  border: 2px solid #000;
+  border: 2px solid #957B5F;
   -webkit-border-radius: 8px;
           border-radius: 8px;
 }
