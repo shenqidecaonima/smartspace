@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Rokkitt&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900&display=swap');
 html, body{
   height: 100%;
   width: 100%;
@@ -12,7 +11,7 @@ html, body{
   height: 90px;
   background-color: rgb(46,45,45);
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   color: white;
 }
 .backVideo {
@@ -44,7 +43,15 @@ html, body{
   padding: 0,0,0,0;
   margin: 0,0,0,0;
   background-color: rgba(0, 0, 0, .2);
+  z-index: 1;
+}
 
+.thoseWords {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 70px;
+  margin-left: 200px;
 }
 
 .logo {

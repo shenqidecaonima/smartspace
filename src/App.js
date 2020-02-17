@@ -40,6 +40,10 @@ function App() {
                 </nav>
             </section>
 
+            <div className="thoseWords">
+              <p>Dedicated to your <br />Internet Access</p>
+            </div>
+
 
             <div className="mouse_scroll">
               <div className="mouse">
