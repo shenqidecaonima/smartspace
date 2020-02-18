@@ -6,14 +6,6 @@ html, body{
   font-family: 'Rokkitt', serif;
 }
 
-.topBar {
-  width: 100%;
-  height: 90px;
-  background-color: rgb(46,45,45);
-  position: fixed;
-  z-index: 2;
-  color: white;
-}
 .backVideo {
   position: fixed;
   margin: 0;
@@ -46,18 +38,25 @@ html, body{
   z-index: 1;
 }
 
+.topBar{
+  width: 100%;
+  height: auto;
+  display: flex;
+}
 .thoseWords {
   color: white;
   font-family: 'Roboto', sans-serif;
   font-weight: 900;
   font-size: 70px;
   margin-left: 100px;
+  position: relative;
 }
 
 .logo {
   position: relative;
-  width: 90px;
-  height: 90px;
+  left: -130px;
+  top: -50px;
+  margin-right: 100px;
 }
 
 ul li {
@@ -67,10 +66,8 @@ ul li {
 
 .menu {
   position: relative;
-  top: -60px;
-  left: 65%;
-  width: 600px;
-  height: 90px;
+  padding-top: 50px;
+  margin-left: 250px;
 }
 
 .navBar-link {
@@ -82,13 +79,13 @@ a {
   font-size: 20px;
   font-family: 'Roboto', sans-serif;
   color: white;
+  font-weight: bold;
 }
 a:link {
   text-decoration: none;
 }
 a:hover{
-  font-weight: bold;
-  color: #957B5F;
+  color: #957B5F
 }
 
 .mouse_scroll {
@@ -97,7 +94,7 @@ a:hover{
 	width: 24px;
 	height: 100px;
   right: middle;
-  top: 500px;
+  top: 400px;
 	margin-bottom: 25px;
   position: relative;
 }

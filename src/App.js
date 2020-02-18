@@ -16,8 +16,9 @@ function App() {
         <div className="content">
           <div className="coverPage">
 
+            <div className="topBar">
             <section  className="logo">
-                <img src="logo.png" alt="logo" width="150px" height="160px"/>
+                <img src="logo1.png" alt="logo" width="532px" height="300px"/>
             </section>
             <section className="menu">
                 <nav>
@@ -34,6 +35,7 @@ function App() {
                   </ul>
                 </nav>
             </section>
+            </div>
 
             <div className="thoseWords">
               <p>Dedicated to your <br />Internet Access</p>
@@ -140,7 +142,7 @@ function App() {
 
             <div className="footer">
               <section id="footerSection">
-                <img src="#" alt="small logo here"/>
+                <img src="./logo3.png" alt="small logo here" width="266px" height="160px"/>
               </section>
               <section id="footerSection">
                 <h5 className="footerTitle" id="footerStyle">ADRESSS</h5>
