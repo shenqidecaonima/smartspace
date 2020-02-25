@@ -7,7 +7,7 @@ function App() {
       <body>
         <div className="backVideo">
           <video muted loop autoPlay role="presentation" width="100%" height="100%">
-              <source src="/video/homePage.mp4" type="video/mp4" />
+              <source src="/video/homePage1.mp4" type="video/mp4" />
           </video>
         </div>
 
@@ -18,7 +18,7 @@ function App() {
 
             <div className="topBar">
             <section  className="logo">
-                <img src="logo1.png" alt="logo" width="532px" height="300px"/>
+                <img src="logo1.png" alt="logo" width="266px" height="150px"/>
             </section>
             <section className="menu">
                 <nav>
