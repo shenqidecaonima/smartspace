@@ -38,7 +38,7 @@ function App() {
             </div>
 
             <div className="thoseWords">
-              <p>Dedicated to your <br />Internet Access</p>
+              <p className="slogan">Dedicated to your <br />Internet Access</p>
             </div>
 
 
