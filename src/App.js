@@ -53,10 +53,10 @@ function App() {
               </div>
             </div>
 
-
           </div>
 
           <div className="info">
+            <div className="interesting"></div>
             <a name="service"></a>
             <div className="service">
               <h4>The Future has Begun</h4>
@@ -77,6 +77,7 @@ function App() {
                 </section>
               </div>
             </div>
+
 
             <div className="teaminfo">
               <h2 id="teamTitle">TEAM</h2>
