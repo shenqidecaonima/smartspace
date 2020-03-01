@@ -294,11 +294,35 @@ p{
   border-width: 4px;
   border-color: orange;
 }
+.magic {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+}
+.svg_1 {
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 180px;
+}
+.svg_2 {
+  position: absolute;
+  z-index: 2;
+  top: 100px;
+  left: 280px;
+}
+.svg_3 {
+  position: absolute;
+  z-index: 2;
+  top: 170px;
+  left: 420px;
+}
 
 .teaminfo {
   margin-bottom: 50px;
   margin-top: 200px;
   padding-bottom: 100px;
+
 }
 
 .teamwrapper {
@@ -307,8 +331,9 @@ p{
   margin-top: 50px;
 }
 
+
 .teamContent1 {
-  background-image: url("/test1.jpg");
+/*  background-image: url("/Team/chen.png");*/
   background-size: 300px, 400px;
   background-repeat: no-repeat;
   width: 300px;
@@ -317,21 +342,23 @@ p{
   overflow-y: hidden;
 }
 
+#pforTeam {
+  color:black;
+}
 .nameCard {
   background-color: white;
-  height: 250px;
+  height: auto;
   opacity: 0.7;
   position: absolute;
-  bottom: -100px;
   width: 100%;
   z-index: 1;
 }
-
+/*
 .nameCard:hover {
   transition: transform 0.3s;
   transform: translateY(-100px);
 }
-
+*/
 .client {
   background-color: white;
   width: 100%;
@@ -354,6 +381,8 @@ table {
   color: white;
 }
 
+
+
 .footer {
   position: relative;
   width: 100%;
@@ -372,4 +401,7 @@ table {
 }
 .footerTitle {
   font-size: 16px;
+}
+.footerinfo {
+  font-size: 13px;
 }

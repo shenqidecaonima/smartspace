@@ -61,7 +61,35 @@ function App() {
             <div className="service">
               <h4>The Future has Begun</h4>
               <h2>OUR SOLUTION SERVICES</h2>
+              <div className="magic">
+                <img src="./service.png" alt="service" />
+                <svg className="svg_1">
+                  <g class="layer">
+                  <title>Layer 1</title>
+                  <circle cx="100" cy="100" fill="#FFFFFF" r="11" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+                  <circle cx="100" cy="100" fill="rgb(46,45,45)" r="10" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+                  <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
+                  </g>
+                </svg>
+                <svg className="svg_2">
+                  <g class="layer">
+                  <title>Layer 1</title>
+                  <circle cx="100" cy="100" fill="#FFFFFF" r="11" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+                  <circle cx="100" cy="100" fill="rgb(46,45,45)" r="10" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+                  <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
+                  </g>
+                </svg>
+                <svg className="svg_3">
+                  <g class="layer">
+                  <title>Layer 1</title>
+                  <circle cx="100" cy="100" fill="#FFFFFF" r="11" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+                  <circle cx="100" cy="100" fill="rgb(46,45,45)" r="10" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
+                  <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
+                  </g>
+                </svg>
 
+
+              </div>
               <div className="serviceContent">
                 <section className="service_info">
                   <h3>Smart Office</h3>
@@ -84,13 +112,12 @@ function App() {
               <div className="teamwrapper">
                 <div className="teamContent1">
                   <div className="nameCard">
-                    <p className="teamName">Nicole Chen</p>
-                    <p className="teamIntro">
-                      创始人曾就职于戴德梁行，现致力于网络及5G应用物联网方案解决。
-                      毕业于英国伦敦大学建筑系规划开发硕士
-                      创始人曾就职于戴德梁行，现致力于网络及5G应用物联网方案解决。
-                      毕业于英国伦敦大学建筑系规划开发硕士
-                      创始人曾就职于戴德梁行，现致力于网络及5G应用物联网方案解决。
+                    <p className="teamName" id="pforTeam">Nicole Chen</p>
+                    <p className="teamIntro" id="pforTeam">
+                    She has worked for Cushman & Wakefield as well as the British Council.<br />
+                    She is currently working in the field of Communication Technology, specializing in 5G network construction and intelligence building.<br />
+                    She graduated from Raffles Institution Highschool in Singapore and received a Master's of Science Degree from University College London, The Bartlett school of Architecture.
+
                     </p>
                   </div>
                 </div>
@@ -147,7 +174,7 @@ function App() {
                 <img src="./logo3.png" alt="small logo here" width="266px" height="160px"/>
               </section>
               <section id="footerSection">
-                <h5 className="footerTitle" id="footerStyle">ADRESSS</h5>
+                <h5 className="footerTitle" id="footerStyle">ADDRESS</h5>
                 <p className="footerinfo" id="footerStyle">
                   Room 811, No.1295 Lu jia bang Road<br />
                   Huang Pu District, Shanghai
@@ -155,7 +182,7 @@ function App() {
               </section>
               <section id="footerSection">
                 <h5 className="footerTitle" id="footerStyle">CONTACTS</h5>
-                <p className="classinfo" id="footerStyle">
+                <p className="footerinfo" id="footerStyle">
                   Twitter：smart space8<br />
                   微信公众号：讯楼科技smartspace
                 </p>
