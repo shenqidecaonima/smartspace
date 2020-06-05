@@ -46,6 +46,7 @@ html, body{
   height: auto;
   display: flex;
 }
+
 .thoseWords {
   color: white;
   font-family: 'Roboto', sans-serif;
@@ -61,10 +62,16 @@ html, body{
   margin-right: 100px;
 }
 
-ul li {
+.navBar-ul {
+  float: left;
+  list-style-type: none;
+
+}
+.navBar-li {
   float: left;
   list-style-type: none;
 }
+
 
 .menu {
   position: relative;
@@ -299,6 +306,50 @@ p{
   z-index: 1;
   display: inline-block;
 }
+
+.magic-img:hover + .magic-menu {
+  visibility: visible;
+  color: red;
+}
+
+.magic-menu1 {
+  width: 200px;
+  position: relative;
+  float: left;
+  top: 100px;
+  left: 100px;
+  visibility: visible;
+}
+.magic-menu2 {
+  width: 200px;
+  position: relative;
+  float: right;
+  top: 100px;
+  right: 210px;
+  visibility: visible;
+}
+.magic-menu3 {
+  width: 200px;
+  position: absolute;
+  top: 300px;
+  left: 210px;
+  visibility: visible;
+}
+
+.magic-ul {
+  list-style-type: none;
+}
+.magic-title {
+  padding-bottom: 20px;
+  color: #DCDCDC;
+}
+.magic-li {
+  border-bottom:0.1px solid #DCDCDC;
+  color: #DCDCDC;
+}
+
+.magic-li
+
 .svg_1 {
   position: absolute;
   z-index: 2;

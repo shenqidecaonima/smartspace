@@ -23,13 +23,13 @@ function App() {
             <section className="menu">
                 <nav>
                   <ul className="navBar-ul">
-                    <li>
+                    <li className="navBar-li">
                       <a className="navBar-link" href="#service">Service</a>
                     </li>
-                    <li>
+                    <li className="navBar-li">
                       <a className="navBar-link" href="#">Team</a>
                     </li>
-                    <li>
+                    <li className="navBar-li">
                       <a className="navBar-link" href="#">Client</a>
                     </li>
                   </ul>
@@ -62,7 +62,33 @@ function App() {
               <h4>The Future has Begun</h4>
               <h2>OUR SOLUTION SERVICES</h2>
               <div className="magic">
-                <img src="./service.png" alt="service" />
+                <img src="./service.png" alt="service" className="magic-img"/>
+                <div className="magic-menu1">
+                  <ul className="magic-ul">
+                    <li className="magic-title">SMART OFFICE</li>
+                    <li className="magic-li">5G</li>
+                    <li className="magic-li">Internet/Customization/Smart Office</li>
+                    <li className="magic-li">Cloud Server/IDC/VPN</li>
+                  </ul>
+                </div>
+
+                <div className="magic-menu2">
+                  <ul className="magic-ul">
+                    <li className="magic-title">Intelligent Building</li>
+                    <li className="magic-li">5G/IOT/AI Customized Solution /Visualization Management Platform for Leasing/Property/IBMS system/Service Robot/Face recognition System for gateway/Camera</li>
+                    <li className="magic-li">Building intelligence weak electricity</li>
+                  </ul>
+                </div>
+
+                <div className="magic-menu3">
+                  <ul className="magic-ul">
+                    <li className="magic-title">Smart City</li>
+                    <li className="magic-li">Internet/Customization/ Maintenance/Smart Office</li>
+                    <li className="magic-li">Cloud Server/IDC/VPN</li>
+                  </ul>
+                </div>
+
+{/*
                 <svg className="svg_1">
                   <g class="layer">
                   <title>Layer 1</title>
@@ -87,22 +113,8 @@ function App() {
                   <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
                   </g>
                 </svg>
+*/}
 
-
-              </div>
-              <div className="serviceContent">
-                <section className="service_info">
-                  <h3>Smart Office</h3>
-                  <p>5G/Internet/Customization/ Maintenance/Smart Office/ Cloud Server/IDC/VPN</p>
-                </section>
-                <section className="service_info">
-                  <h3>Intelligent Building</h3>
-                  <p>5G/IOT/AI Customized Solution /Visualization Management Platform for Leasing/Property/5G/Internet/IBMS system/Service Robot/Face recognition System for gateway/Camera/Building intelligence weak electricity</p>
-                </section>
-                <section className="service_info">
-                  <h3>Smart City</h3>
-                  <p>Smart Street Lights/IOT/Intelligent Parking/Ware house/Transportation/Environmental protection</p>
-                </section>
               </div>
             </div>
 
