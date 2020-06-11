@@ -8,6 +8,7 @@ html, body{
   width: 100%;
   font-family: 'Quicksand';
   letter-spacing: 1px;
+  margin: 0;
 }
 
 .backVideo {
@@ -369,6 +370,11 @@ p{
   left: 420px;
 }
 
+#bestMenu {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
 .teaminfo {
   margin-bottom: 50px;
   margin-top: 200px;
