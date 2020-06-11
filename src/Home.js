@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-
+import BestMenu from "./BestMenu";
 
 export default class Home extends Component{
   render(){
     return(
-      <div className="App">
-        <body>
+      <div>
           <div className="backVideo">
             <video muted loop autoPlay role="presentation" width="100%" height="100%">
                 <source src="/video/homePage1.mp4" type="video/mp4" />
@@ -119,9 +118,7 @@ export default class Home extends Component{
                 </div>
               </div>
 
-              <canvas id="bestMenu">
-
-              </canvas>
+              <BestMenu />
 
 
               <div className="teaminfo">
@@ -208,8 +205,8 @@ export default class Home extends Component{
 
             </div>
           </div>
-        </body>
       </div>
+
     )
   }
 }
