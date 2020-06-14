@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import "./BestMenu.css";
 import GoogleFontLoader from 'react-google-font-loader';
 
-//import building from "./service.png";
 const font = () => (
   <GoogleFontLoader
   fonts={[
@@ -21,10 +20,35 @@ function drawBuilding(props) {
   img.onload = function(){
     ctx.drawImage(img,0,0);
   }
-  
+}
+class title {
+  constructor(ctx,startPoint,endPoint,length){
+    this.ctx = ctx;
+    this.startPoint = startPoint;
+    this.endPoint = endPoint;
+    this.length = length;
+  }
+
+  drawTitleText(ctx,startPoint,endPoint,length){}
+} 
+
+function drawTitleText(props){
+  const {ctx,toX,toY,length} = props;
+
+  if(length>=0){
+    ctx.font = "20px Quicksand";
+    ctx.fillText(menuData[0], toX+5, toY-5);
+  }else{
+    ctx.font = "20px Quicksand";
+    ctx.fillText(menuData[0], toX+length+5, toY-5);
+  } 
+}
+
+class content {
 
 }
-function title(props) {
+
+function drawTitle(props) {
   const {ctx, fromX, fromY, toX, toY, length,color,i} = props;
   ctx.beginPath();
   ctx.moveTo(fromX,fromY);
@@ -32,20 +56,13 @@ function title(props) {
   
   ctx.moveTo(toX,toY);
   ctx.lineTo(toX+length,toY);
+  //Menu text
+  drawTitleText({ctx,toX,toY,length});
 
-  if(length>=0){
-    ctx.font = "20px Quicksand";
-    ctx.fillText(menuData[0], toX+5, toY-5);
-    ctx.strokeStyle = color;
-    ctx.stroke();
-  }else{
-    ctx.font = "20px Quicksand";
-    ctx.fillText(menuData[0], toX+length+5, toY-5);
-    ctx.strokeStyle = color;
-    ctx.stroke();
-  }
+  ctx.strokeStyle = color;
+  ctx.stroke();
+  ctx.closePath();
 
-  
 }
 
 function underLine(props) {
@@ -53,10 +70,6 @@ function underLine(props) {
   ctx.beginPath();
   ctx.moveTo(newFromX,newFromY);
   ctx.lineTo(newToX,newToY);
-
-  console.log("newFromX:"+newFromX);
-  console.log("newToX:"+newToX);
-  console.log(1);
 
   if(newFromX<=newToX){
     ctx.font = "15px Quicksand";
@@ -66,16 +79,17 @@ function underLine(props) {
   }else{
     ctx.font = "15px Quicksand";
     ctx.fillText(service[0], newToX, newToY-5);
-    console.log(newToX);
     ctx.stroke();
 
   }
 }
 
-
 function menu(props) {
-  const {ctx, fromX, fromY, toX, toY, length, height, color,i} = props;
-  title({ctx, fromX, fromY, toX, toY, length, color,i});
+  const {ctx, fromX, fromY, toX, toY, length, height, color} = props;
+
+
+  drawTitle({ctx, fromX, fromY, toX, toY, length, color});
+  
   var newFromX = toX;
   var newFromY = toY + height;
   var newToX = toX+length;
@@ -94,31 +108,72 @@ const menuData = [
   "Intelligent Building"
 ]
 
+
+
+
 export default class BestMenu extends Component{
   constructor(props) {
     super(props); 
     this.canvas = React.createRef();
   }
   
-  
-  componentWillMount() {
-    
-  }
   componentDidMount() {
     const canvas = this.canvas.current;
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
+
+    //load building img
+    var img = new Image();
+    img.src = "./service.png";
+    img.onload = function(){
+      ctx.drawImage(img,0,0);
+    }
     
     if (canvas.getContext) {
       var ctx = canvas.getContext("2d");
-      var img = new Image();
-      img.src = "./service.png";
-      img.onload = function(){
-        ctx.drawImage(img,0,0);
+
+      //building var
+      var building1 = {
+        x1 : 543,
+        x2 : 607,
+        y1 : 80,
+        y2 : 331
       }
+      var building2 = {
+        x1:458,
+        x2:569,
+        y1:302,
+        y2:495
+      }
+
+      var building3 = {
+
+      }
+      canvas.addEventListener('click',
+        function(event){
+          //Smart Office Menu
+          if(event.pageX>=building1.x1 & event.pageX<=building1.x2){
+            if(event.pageY>=building1.y1 & event.pageY<=building1.y2){
+                menu({ctx, fromX: 600, fromY: 150, toX: 750, toY: 100, length:150, height:40,color: "black" });
+            } 
+          }
+
+          //Smart City
+          if(event.pageX>=building2.x1 & event.pageX<=building2.x2){
+            if(event.pageY>=building2.y1 & event.pageY<=building2.y2){
+              menu({ctx, fromX: 480, fromY: 520, toX: 300, toY: 500, length:-150, height:40,color: "#DCDCDC" });
+            } 
+          }
+        
+        });
+
+      // canvas.addEventListener("click",
+      //   function(event){
+      //     alert(event.x + "," + event.y);
+      //   })
+
       
-    menu({ctx, fromX: 600, fromY: 150, toX: 750, toY: 100, length:150, height:40,color: "black" });
-    menu({ctx, fromX: 480, fromY: 520, toX: 300, toY: 500, length:-150, height:40,color: "black" });
+    
     menu({ctx, fromX: 700, fromY: 310, toX: 950, toY: 400, length:150, height:40,color: "black" });  
       
       
