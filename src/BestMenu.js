@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import "./BestMenu.css";
 import GoogleFontLoader from 'react-google-font-loader';
 
+
 const font = () => (
   <GoogleFontLoader
   fonts={[
@@ -21,16 +22,17 @@ function drawBuilding(props) {
     ctx.drawImage(img,0,0);
   }
 }
-class title {
-  constructor(ctx,startPoint,endPoint,length){
-    this.ctx = ctx;
-    this.startPoint = startPoint;
-    this.endPoint = endPoint;
-    this.length = length;
-  }
 
-  drawTitleText(ctx,startPoint,endPoint,length){}
-} 
+// class title {
+//   constructor(ctx,startPoint,endPoint,length){
+//     this.ctx = ctx;
+//     this.startPoint = startPoint;
+//     this.endPoint = endPoint;
+//     this.length = length;
+//   }
+
+//   drawTitleText(ctx,startPoint,endPoint,length){}
+// } 
 
 function drawTitleText(props){
   const {ctx,toX,toY,length} = props;
@@ -42,10 +44,6 @@ function drawTitleText(props){
     ctx.font = "20px Quicksand";
     ctx.fillText(menuData[0], toX+length+5, toY-5);
   } 
-}
-
-class content {
-
 }
 
 function drawTitle(props) {
@@ -128,57 +126,113 @@ export default class BestMenu extends Component{
     img.onload = function(){
       ctx.drawImage(img,0,0);
     }
+
+    var smartCity = new Image();
+    smartCity.src = "./smartcity.png";
+    smartCity.onload = function(){
+      ctx.drawImage(smartCity,985,30,40,40);
+    }
+    var smartOffice = new Image();
+    smartOffice.src = "./smartOffice.png";
+    smartOffice.onload = function(){
+      ctx.drawImage(smartOffice,1100,200,40,40);
+    }
+    var intelligentBuilding = new Image();
+    intelligentBuilding.src = "./intelligentBuilding.png";
+    intelligentBuilding.onload = function(){
+      ctx.drawImage(intelligentBuilding,985,520,40,40);
+    }
+
     
     if (canvas.getContext) {
       var ctx = canvas.getContext("2d");
+  
+      function drawLine(){
+        ctx.clearRect(820,0,1000,700);
+        ctx.strokeStyle = "#DCDCDC";
+        ctx.beginPath();
+        ctx.lineWidth = 4;
+        ctx.arc(100,300,800,0.01*Math.PI,0.06*Math.PI);     
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(100,300,800,1.87*Math.PI,1.92*Math.PI);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.arc(100,300,800,1.94*Math.PI,1.99*Math.PI);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(898,274);
+        ctx.lineTo(1100,250);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(874,100);
+        ctx.lineTo(1000,100);
+        ctx.lineTo(1010,80);
+        ctx.stroke();
+        ctx.closePath();
+        ctx.beginPath();
+        ctx.moveTo(883,450);
+        ctx.lineTo(1000,510);
+        ctx.stroke();
+        ctx.closePath();
+      }
+      drawLine();
 
+      ctx.clearRect(1030,1400,200,200);
+      ctx.font = "15px Quicksand";
+      ctx.fillText(menuData[0], 0, 0);
+      ctx.strokeStyle = "#DCDCDC";
+      ctx.stroke();
+      
+ 
       //building var
       var building1 = {
-        x1 : 543,
-        x2 : 607,
-        y1 : 80,
-        y2 : 331
-      }
-      var building2 = {
-        x1:458,
-        x2:569,
-        y1:302,
-        y2:495
-      }
+        x1 : 985,
+        x2 : 1025,
+        y1 : 190,
+        y2 : 210
+      };
+      // var building2 = {
+      //   x1:458,
+      //   x2:569,
+      //   y1:302,
+      //   y2:495
+      // }
 
-      var building3 = {
+      // var building3 = {
 
-      }
-      canvas.addEventListener('click',
+      // }
+
+
+      canvas.addEventListener("click",
         function(event){
           //Smart Office Menu
-          if(event.pageX>=building1.x1 & event.pageX<=building1.x2){
-            if(event.pageY>=building1.y1 & event.pageY<=building1.y2){
-                menu({ctx, fromX: 600, fromY: 150, toX: 750, toY: 100, length:150, height:40,color: "black" });
-            } 
-          }
+          if(event.pageX>=985 & event.pageX<=1025){
+            if(event.pageY>=1500 & event.pageY<=1530){
 
-          //Smart City
-          if(event.pageX>=building2.x1 & event.pageX<=building2.x2){
-            if(event.pageY>=building2.y1 & event.pageY<=building2.y2){
-              menu({ctx, fromX: 480, fromY: 520, toX: 300, toY: 500, length:-150, height:40,color: "#DCDCDC" });
-            } 
+            }
           }
+      //     //Smart City
+      //     if(event.pageX>=building2.x1 & event.pageX<=building2.x2){
+      //       if(event.pageY>=building2.y1 & event.pageY<=building2.y2){
+      //         menu({ctx, fromX: 480, fromY: 520, toX: 300, toY: 500, length:-150, height:40,color: "#DCDCDC" });
+      //       }
+      //     }
+
+      //     console.log("1");
         
         });
 
       // canvas.addEventListener("click",
       //   function(event){
       //     alert(event.x + "," + event.y);
+      //     console.log(event);
       //   })
-
-      
-    
-    menu({ctx, fromX: 700, fromY: 310, toX: 950, toY: 400, length:150, height:40,color: "black" });  
-      
-      
-
-    }
+     }
     
   }
 
@@ -188,6 +242,9 @@ export default class BestMenu extends Component{
       <div>
         <canvas ref={this.canvas}></canvas>
         {/* <img ref="image" src="./service.png"></img> */}
+        
+
+        
       </div>
 
     )

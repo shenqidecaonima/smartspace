@@ -282,6 +282,7 @@ p{
 
 .service {
   position: relative;
+  top: -100px;
 }
 .serviceContent{
   display: flex;
@@ -305,7 +306,13 @@ p{
 .magic {
   position: relative;
   z-index: 1;
-  display: inline-block;
+  
+}
+
+.magic {
+  position: relative;
+  z-index: 1;
+  
 }
 
 .magic-img:hover + .magic-menu {
@@ -316,24 +323,25 @@ p{
 .magic-menu1 {
   width: 200px;
   position: relative;
-  float: left;
+  float: right;
   top: 100px;
-  left: 100px;
+  right: 250px;
   visibility: visible;
 }
 .magic-menu2 {
-  width: 200px;
+  width: 350px;
   position: relative;
   float: right;
-  top: 100px;
-  right: 210px;
+  top: 650px;
+  right: -150px;
   visibility: visible;
 }
 .magic-menu3 {
   width: 200px;
-  position: absolute;
-  top: 300px;
-  left: 210px;
+  position: relative;
+  float:right;
+  top: 350px;
+  left: 450px;
   visibility: visible;
 }
 
@@ -349,26 +357,6 @@ p{
   color: #DCDCDC;
 }
 
-.magic-li
-
-.svg_1 {
-  position: absolute;
-  z-index: 2;
-  top: 100px;
-  left: 180px;
-}
-.svg_2 {
-  position: absolute;
-  z-index: 2;
-  top: 100px;
-  left: 280px;
-}
-.svg_3 {
-  position: absolute;
-  z-index: 2;
-  top: 170px;
-  left: 420px;
-}
 
 #bestMenu {
   width: 100%;
@@ -462,3 +450,4 @@ table {
 .footerinfo {
   font-size: 13px;
 }
+

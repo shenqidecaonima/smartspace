@@ -62,8 +62,7 @@ export default class Home extends Component{
                 <h4>The Future has Begun</h4>
                 <h2>OUR SOLUTION SERVICES</h2>
                 <div className="magic">
-                  <img src="./service.png" alt="service" className="magic-img"/>
-                  <div className="magic-menu1">
+                <div className="magic-menu1">
                     <ul className="magic-ul">
                       <li className="magic-title">SMART OFFICE</li>
                       <li className="magic-li">5G</li>
@@ -87,38 +86,13 @@ export default class Home extends Component{
                       <li className="magic-li">Cloud Server/IDC/VPN</li>
                     </ul>
                   </div>
-
-      {/*
-                  <svg className="svg_1">
-                    <g class="layer">
-                    <title>Layer 1</title>
-                    <circle cx="100" cy="100" fill="#FFFFFF" r="11" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
-                    <circle cx="100" cy="100" fill="rgb(46,45,45)" r="10" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
-                    <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
-                    </g>
-                  </svg>
-                  <svg className="svg_2">
-                    <g class="layer">
-                    <title>Layer 1</title>
-                    <circle cx="100" cy="100" fill="#FFFFFF" r="11" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
-                    <circle cx="100" cy="100" fill="rgb(46,45,45)" r="10" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
-                    <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
-                    </g>
-                  </svg>
-                  <svg className="svg_3">
-                    <g class="layer">
-                    <title>Layer 1</title>
-                    <circle cx="100" cy="100" fill="#FFFFFF" r="11" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
-                    <circle cx="100" cy="100" fill="rgb(46,45,45)" r="10" stroke="#FFFFFF" stroke-dasharray="null" stroke-linecap="null" stroke-linejoin="null" stroke-width="4"/>
-                    <polygon points="91 108.5,100 120,109 108.5" fill="#FFFFFF"  stroke="#FFFFFF" stroke-width="1" />
-                    </g>
-                  </svg>
-      */}
+       
 
                 </div>
+                <BestMenu />
               </div>
 
-              <BestMenu />
+              
 
 
               <div className="teaminfo">
