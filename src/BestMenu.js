@@ -130,17 +130,17 @@ export default class BestMenu extends Component{
     var smartCity = new Image();
     smartCity.src = "./smartcity.png";
     smartCity.onload = function(){
-      ctx.drawImage(smartCity,985,30,40,40);
+      ctx.drawImage(smartCity,760,0,40,40);
     }
     var smartOffice = new Image();
     smartOffice.src = "./smartOffice.png";
     smartOffice.onload = function(){
-      ctx.drawImage(smartOffice,1100,200,40,40);
+      ctx.drawImage(smartOffice,850,150,50,50);
     }
     var intelligentBuilding = new Image();
     intelligentBuilding.src = "./intelligentBuilding.png";
     intelligentBuilding.onload = function(){
-      ctx.drawImage(intelligentBuilding,985,520,40,40);
+      ctx.drawImage(intelligentBuilding,800,520,40,40);
     }
 
     
@@ -148,45 +148,37 @@ export default class BestMenu extends Component{
       var ctx = canvas.getContext("2d");
   
       function drawLine(){
-        ctx.clearRect(820,0,1000,700);
+        
         ctx.strokeStyle = "#DCDCDC";
+        ctx.lineWidth = 0.5;
+        //ctx.strokeStyle = "black";
         ctx.beginPath();
-        ctx.lineWidth = 4;
-        ctx.arc(100,300,800,0.01*Math.PI,0.06*Math.PI);     
+        ctx.moveTo(400,100);
+        ctx.lineTo(600,0);
+        ctx.lineTo(750,0);
         ctx.stroke();
         ctx.closePath();
+
         ctx.beginPath();
-        ctx.arc(100,300,800,1.87*Math.PI,1.92*Math.PI);
+        ctx.moveTo(640,300);
+        ctx.lineTo(750,200);
+        ctx.lineTo(900,200);
+        ctx.lineTo(910,180);
         ctx.stroke();
         ctx.closePath();
+
         ctx.beginPath();
-        ctx.arc(100,300,800,1.94*Math.PI,1.99*Math.PI);
+        ctx.moveTo(570,500);
+        ctx.lineTo(685,630);
+        ctx.lineTo(800,630);
+        ctx.lineTo(800,550);
         ctx.stroke();
         ctx.closePath();
-        ctx.beginPath();
-        ctx.moveTo(898,274);
-        ctx.lineTo(1100,250);
-        ctx.stroke();
-        ctx.closePath();
-        ctx.beginPath();
-        ctx.moveTo(874,100);
-        ctx.lineTo(1000,100);
-        ctx.lineTo(1010,80);
-        ctx.stroke();
-        ctx.closePath();
-        ctx.beginPath();
-        ctx.moveTo(883,450);
-        ctx.lineTo(1000,510);
-        ctx.stroke();
-        ctx.closePath();
+
       }
       drawLine();
 
-      ctx.clearRect(1030,1400,200,200);
-      ctx.font = "15px Quicksand";
-      ctx.fillText(menuData[0], 0, 0);
-      ctx.strokeStyle = "#DCDCDC";
-      ctx.stroke();
+
       
  
       //building var
@@ -208,24 +200,24 @@ export default class BestMenu extends Component{
       // }
 
 
-      canvas.addEventListener("click",
-        function(event){
-          //Smart Office Menu
-          if(event.pageX>=985 & event.pageX<=1025){
-            if(event.pageY>=1500 & event.pageY<=1530){
+      // canvas.addEventListener("click",
+      //   function(event){
+      //     //Smart Office Menu
+      //     if(event.pageX>=985 & event.pageX<=1025){
+      //       if(event.pageY>=1500 & event.pageY<=1530){
 
-            }
-          }
-      //     //Smart City
-      //     if(event.pageX>=building2.x1 & event.pageX<=building2.x2){
-      //       if(event.pageY>=building2.y1 & event.pageY<=building2.y2){
-      //         menu({ctx, fromX: 480, fromY: 520, toX: 300, toY: 500, length:-150, height:40,color: "#DCDCDC" });
       //       }
       //     }
+      // //     //Smart City
+      // //     if(event.pageX>=building2.x1 & event.pageX<=building2.x2){
+      // //       if(event.pageY>=building2.y1 & event.pageY<=building2.y2){
+      // //         menu({ctx, fromX: 480, fromY: 520, toX: 300, toY: 500, length:-150, height:40,color: "#DCDCDC" });
+      // //       }
+      // //     }
 
-      //     console.log("1");
+      // //     console.log("1");
         
-        });
+      //   });
 
       // canvas.addEventListener("click",
       //   function(event){

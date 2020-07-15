@@ -325,7 +325,7 @@ p{
   position: relative;
   float: right;
   top: 100px;
-  right: 250px;
+  right: 450px;
   visibility: visible;
 }
 .magic-menu2 {
@@ -333,7 +333,7 @@ p{
   position: relative;
   float: right;
   top: 650px;
-  right: -150px;
+  right: 50px;
   visibility: visible;
 }
 .magic-menu3 {
@@ -341,7 +341,7 @@ p{
   position: relative;
   float:right;
   top: 350px;
-  left: 450px;
+  left: 250px;
   visibility: visible;
 }
 
