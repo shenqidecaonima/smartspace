@@ -124,14 +124,14 @@ export default class BestMenu extends Component{
     var img = new Image();
     img.src = "./service.png";
     img.onload = function(){
-      ctx.drawImage(img,0,0);
+      ctx.drawImage(img,0,100);
     }
 
-    var smartCity = new Image();
-    smartCity.src = "./smartcity.png";
-    smartCity.onload = function(){
-      ctx.drawImage(smartCity,760,0,40,40);
-    }
+    // var smartCity = new Image();
+    // smartCity.src = "./smartcity.png";
+    // smartCity.onload = function(){
+    //   ctx.drawImage(smartCity,760,15,40,40);
+    // }
     var smartOffice = new Image();
     smartOffice.src = "./smartOffice.png";
     smartOffice.onload = function(){
@@ -140,7 +140,7 @@ export default class BestMenu extends Component{
     var intelligentBuilding = new Image();
     intelligentBuilding.src = "./intelligentBuilding.png";
     intelligentBuilding.onload = function(){
-      ctx.drawImage(intelligentBuilding,800,520,40,40);
+      ctx.drawImage(intelligentBuilding,820,400,40,40);
     }
 
     
@@ -150,28 +150,26 @@ export default class BestMenu extends Component{
       function drawLine(){
         
         ctx.strokeStyle = "#DCDCDC";
-        ctx.lineWidth = 0.5;
+        
         //ctx.strokeStyle = "black";
         ctx.beginPath();
-        ctx.moveTo(400,100);
-        ctx.lineTo(600,0);
-        ctx.lineTo(750,0);
+        ctx.moveTo(400,200);
+        ctx.lineTo(560,5);
+        ctx.lineTo(990,5);
         ctx.stroke();
         ctx.closePath();
 
         ctx.beginPath();
-        ctx.moveTo(640,300);
+        ctx.moveTo(610,350);
         ctx.lineTo(750,200);
-        ctx.lineTo(900,200);
-        ctx.lineTo(910,180);
+        ctx.lineTo(1100,200);
         ctx.stroke();
         ctx.closePath();
 
         ctx.beginPath();
-        ctx.moveTo(570,500);
-        ctx.lineTo(685,630);
-        ctx.lineTo(800,630);
-        ctx.lineTo(800,550);
+        ctx.moveTo(680,400);
+        ctx.lineTo(850,480);
+        ctx.lineTo(1180,480);
         ctx.stroke();
         ctx.closePath();
 

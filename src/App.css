@@ -305,14 +305,7 @@ p{
 }
 .magic {
   position: relative;
-  z-index: 1;
-  
-}
-
-.magic {
-  position: relative;
-  z-index: 1;
-  
+  z-index: 1;  
 }
 
 .magic-img:hover + .magic-menu {
@@ -321,10 +314,10 @@ p{
 }
 
 .magic-menu1 {
-  width: 200px;
+  width: 250px;
   position: relative;
   float: right;
-  top: 100px;
+  top: 147px;
   right: 450px;
   visibility: visible;
 }
@@ -332,15 +325,15 @@ p{
   width: 350px;
   position: relative;
   float: right;
-  top: 650px;
-  right: 50px;
+  top: 621px;
+  right: 0px;
   visibility: visible;
 }
 .magic-menu3 {
   width: 200px;
   position: relative;
   float:right;
-  top: 350px;
+  top: 370px;
   left: 250px;
   visibility: visible;
 }
@@ -353,10 +346,18 @@ p{
   color: #DCDCDC;
 }
 .magic-li {
-  border-bottom:0.1px solid #DCDCDC;
+  border-bottom:0.5px solid #DCDCDC;
   color: #DCDCDC;
 }
-
+#g5 {
+  border-style: none;
+}
+.smartoffice {
+  position: relative;
+  width: 40px;
+  top: -160px;
+  right: 20px;
+}
 
 #bestMenu {
   width: 100%;
@@ -381,29 +382,32 @@ p{
 /*  background-image: url("/Team/chen.png");*/
   background-size: 300px, 400px;
   background-repeat: no-repeat;
-  width: 300px;
-  height: 400px;
   position: relative;
-  overflow-y: hidden;
+  display: flex;
+
 }
 
 #pforTeam {
   color:black;
 }
 .nameCard {
-  background-color: white;
-  height: auto;
-  opacity: 0.7;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
+  width:200px;
+  height:200px;
+  margin: 100px;
+  border-radius:50%;
+  background-color: whitesmoke;
 }
-/*
+
 .nameCard:hover {
-  transition: transform 0.3s;
-  transform: translateY(-100px);
+  background-color: tomato;
+  
 }
-*/
+
+.nameCardInfo{
+  text-align: center;
+  color : black;
+}
+
 .client {
   background-color: white;
   width: 100%;
@@ -450,4 +454,3 @@ table {
 .footerinfo {
   font-size: 13px;
 }
-
