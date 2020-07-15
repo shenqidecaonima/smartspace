@@ -313,7 +313,7 @@ p{
   position: relative;
   float: right;
   top: 147px;
-  right: 380px;
+  right: 670px;
   color: #817e7e;
 }
 .magic-menu2 {
@@ -322,7 +322,7 @@ p{
   float: right;
   top: 621px;
   left: 80px;
-  color: #747272;
+  color: #817e7e;
 }
 .magic-menu3 {
   width: 200px;
@@ -330,7 +330,7 @@ p{
   float:right;
   top: 370px;
   left: 250px;
-  color: #676565;
+  color: #817e7e;
 }
 
 .magic-ul {
@@ -341,7 +341,7 @@ p{
  
 }
 .magic-li {
-  border-bottom:0.5px solid #676565;;
+  border-bottom:0.5px solid #817e7e;;
   
 }
 #g5 {

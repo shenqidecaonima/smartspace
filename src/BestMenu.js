@@ -152,20 +152,20 @@ export default class BestMenu extends Component{
         ctx.beginPath();
         ctx.moveTo(400,200);
         ctx.lineTo(560,5);
-        ctx.lineTo(990,5);
+        ctx.lineTo(770,5);
         ctx.stroke();
         ctx.closePath();
 
         ctx.beginPath();
         ctx.moveTo(610,350);
-        ctx.lineTo(750,200);
+        ctx.lineTo(900,200);
         ctx.lineTo(1100,200);
         ctx.stroke();
         ctx.closePath();
 
         ctx.beginPath();
         ctx.moveTo(680,400);
-        ctx.lineTo(850,480);
+        ctx.lineTo(900,480);
         ctx.lineTo(1180,480);
         ctx.stroke();
         ctx.closePath();
