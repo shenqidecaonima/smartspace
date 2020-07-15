@@ -64,7 +64,7 @@ export default class Home extends Component{
                 <div className="magic">
                 <div className="magic-menu1">
                     <ul className="magic-ul">
-                      <li className="magic-title">SMART OFFICE</li>
+                      <li className="magic-title">Smart Office</li>
                       <li id="g5" className="magic-li">5G network/4G</li>
                       <li className="magic-li">Call Center/Cloud Server/Platform management/IDC/VPN</li>
                       <li className="magic-li">Customization</li>
@@ -106,17 +106,17 @@ export default class Home extends Component{
                       <div className="nameCardC">
                         <div className="nameCardCC">
                          <p className="nameCardInfo">Jinhua</p>
-                         <p className="nameCardInfo">Tang</p>
+                         <p id="lastName" className="nameCardInfo">Tang</p>
                         </div>
                       </div>                     
                     </div>
                     <div className="nameCard">
                       <p className="nameCardInfo">Nicole</p>
-                      <p className="nameCardInfo">Chen</p>
+                      <p id="lastName" className="nameCardInfo">Chen</p>
                     </div>
                     <div className="nameCard">
                       <p className="nameCardInfo">Jeremy</p>
-                      <p className="nameCardInfo">Tao</p>
+                      <p id="lastName" className="nameCardInfo">Tao</p>
                     </div>
                   </div>
                 </div>

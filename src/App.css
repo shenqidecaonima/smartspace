@@ -308,26 +308,21 @@ p{
   z-index: 1;  
 }
 
-.magic-img:hover + .magic-menu {
-  visibility: visible;
-  color: red;
-}
-
 .magic-menu1 {
   width: 250px;
   position: relative;
   float: right;
   top: 147px;
-  right: 450px;
-  visibility: visible;
+  right: 380px;
+  color: #817e7e;
 }
 .magic-menu2 {
   width: 350px;
   position: relative;
   float: right;
   top: 621px;
-  right: 0px;
-  visibility: visible;
+  left: 80px;
+  color: #747272;
 }
 .magic-menu3 {
   width: 200px;
@@ -335,7 +330,7 @@ p{
   float:right;
   top: 370px;
   left: 250px;
-  visibility: visible;
+  color: #676565;
 }
 
 .magic-ul {
@@ -343,11 +338,11 @@ p{
 }
 .magic-title {
   padding-bottom: 20px;
-  color: #DCDCDC;
+ 
 }
 .magic-li {
-  border-bottom:0.5px solid #DCDCDC;
-  color: #DCDCDC;
+  border-bottom:0.5px solid #676565;;
+  
 }
 #g5 {
   border-style: none;
@@ -384,7 +379,7 @@ p{
   background-repeat: no-repeat;
   position: relative;
   display: flex;
-  left: 300px;
+  left: 280px;
 
 }
 
@@ -396,21 +391,27 @@ p{
   height:100px;
   margin: 60px;
   border-radius:50%;
-  border: solid white;
-  background-color: whitesmoke;
+  border: solid #957B5F;
+  background-color: rgb(46,45,45);
 
 }
 
 .nameCard:hover {
   
   border-style: solid;
-  border-color:tomato;
+  border-color:#957B5F;
+  font-weight: bold;
   
 }
 
 .nameCardInfo{
   text-align: center;
-  color : black;
+  color : #957B5F;
+  font-size: 20px;
+}
+
+#lastName {
+  font-size: 15px;
 }
 
 .client {

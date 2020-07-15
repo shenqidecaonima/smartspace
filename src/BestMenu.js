@@ -140,7 +140,7 @@ export default class BestMenu extends Component{
     var intelligentBuilding = new Image();
     intelligentBuilding.src = "./intelligentBuilding.png";
     intelligentBuilding.onload = function(){
-      ctx.drawImage(intelligentBuilding,820,400,40,40);
+      ctx.drawImage(intelligentBuilding,900,400,40,40);
     }
 
     
@@ -148,10 +148,7 @@ export default class BestMenu extends Component{
       var ctx = canvas.getContext("2d");
   
       function drawLine(){
-        
-        ctx.strokeStyle = "#DCDCDC";
-        
-        //ctx.strokeStyle = "black";
+        ctx.strokeStyle = "#817e7e";
         ctx.beginPath();
         ctx.moveTo(400,200);
         ctx.lineTo(560,5);
