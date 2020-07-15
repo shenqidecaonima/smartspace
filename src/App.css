@@ -384,6 +384,7 @@ p{
   background-repeat: no-repeat;
   position: relative;
   display: flex;
+  left: 300px;
 
 }
 
@@ -391,15 +392,19 @@ p{
   color:black;
 }
 .nameCard {
-  width:200px;
-  height:200px;
-  margin: 100px;
+  width:100px;
+  height:100px;
+  margin: 60px;
   border-radius:50%;
+  border: solid white;
   background-color: whitesmoke;
+
 }
 
 .nameCard:hover {
-  background-color: tomato;
+  
+  border-style: solid;
+  border-color:tomato;
   
 }
 

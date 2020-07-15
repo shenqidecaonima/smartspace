@@ -103,13 +103,20 @@ export default class Home extends Component{
                 <div className="teamwrapper">
                   <div className="teamContent1">
                     <div className="nameCard">
-                      <p className="nameCardInfo">Nicole</p>
+                      <div className="nameCardC">
+                        <div className="nameCardCC">
+                         <p className="nameCardInfo">Jinhua</p>
+                         <p className="nameCardInfo">Tang</p>
+                        </div>
+                      </div>                     
                     </div>
                     <div className="nameCard">
                       <p className="nameCardInfo">Nicole</p>
+                      <p className="nameCardInfo">Chen</p>
                     </div>
                     <div className="nameCard">
-                      <p className="nameCardInfo">Nicole</p>
+                      <p className="nameCardInfo">Jeremy</p>
+                      <p className="nameCardInfo">Tao</p>
                     </div>
                   </div>
                 </div>
