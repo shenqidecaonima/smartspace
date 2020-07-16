@@ -278,6 +278,7 @@ p{
   height: auto;
   margin: 0;
   background-color: rgb(46,45,45);
+  opacity: 0.9;
 }
 
 .service {
@@ -306,6 +307,7 @@ p{
 .magic {
   position: relative;
   z-index: 1;  
+  background-image: image("service.png");
 }
 
 .magic-menu1 {
