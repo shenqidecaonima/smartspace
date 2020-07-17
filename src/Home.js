@@ -27,10 +27,10 @@ export default class Home extends Component{
                         <a className="navBar-link" href="#service">Service</a>
                       </li>
                       <li className="navBar-li">
-                        <a className="navBar-link" href="#">Team</a>
+                        <a className="navBar-link" href="#team">Team</a>
                       </li>
                       <li className="navBar-li">
-                        <a className="navBar-link" href="#">Client</a>
+                        <a className="navBar-link" href="#client">Client</a>
                       </li>
                     </ul>
                   </nav>
@@ -55,9 +55,9 @@ export default class Home extends Component{
 
             </div>
 
+            <a name="service"></a>
             <div className="info">
               <div className="interesting"></div>
-              <a name="service"></a>
               <div className="service">
                 <h4>The Future has Begun</h4>
                 <h2>OUR SOLUTION SERVICES</h2>
@@ -97,7 +97,7 @@ export default class Home extends Component{
 
               
 
-
+              <a name="team"></a>
               <div className="teaminfo">
                 <h2 id="teamTitle">TEAM</h2>
                 <div className="teamwrapper">
@@ -121,12 +121,67 @@ export default class Home extends Component{
                   </div>
                 </div>
               </div>
+              <div className="contact">
+                <h2>CONTACT US</h2>
+                <h4>Get in touch with us!</h4>
+                <div className="contactInfo">
+                  <div className="contactInfoD">
+                    <svg t="1594926536993" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="2323" width="30" height="30"><path d="M745.6 32H278.4C230.4 32 192 73.6 192 121.6v780.8C192 950.4 230.4 992 278.4 992h464c48 0 86.4-41.6 86.4-89.6V121.6C832 73.6 793.6 32 745.6 32z m28.8 870.4c0 16-12.8 28.8-28.8 28.8H278.4c-16 0-28.8-12.8-28.8-28.8V121.6c0-16 12.8-28.8 28.8-28.8h48l22.4 32c9.6 16 28.8 25.6 48 25.6h227.2c19.2 0 38.4-9.6 48-25.6l22.4-32h48c16 0 28.8 12.8 28.8 28.8v780.8z" p-id="2324" fill="#ffffff"></path><path d="M598.4 841.6h-176c-16 0-28.8 12.8-28.8 28.8s12.8 28.8 28.8 28.8h176c16 0 28.8-12.8 28.8-28.8s-12.8-28.8-28.8-28.8z" p-id="2325" fill="#ffffff"></path></svg>
+                    <p className="footerinfo" id="footerStyle">
+                    Twitter：smart space8<br />
+                    微信公众号：讯楼科技smartspace
+                    </p>
+                  </div>
+                  <div className="contactInfoD">
+                    <svg t="1594926640355" class="icon" viewBox="0 0 1025 1024" version="1.1" p-id="3318" width="30" height="30"><path d="M365.062518 704 217.862518 704C198.662518 704 173.062518 716.8 166.662518 729.6L6.662517 934.4C-6.137483 947.2 0.262517 960 19.462517 960L1005.062515 960C1024.262515 960 1030.662515 947.2 1017.862515 934.4L857.862515 729.6C845.062515 716.8 825.862515 704 806.662515 704L659.462515 704 608.262518 768 806.662515 768 909.062515 896 115.462518 896 217.862518 768 416.262518 768 365.062518 704 365.062518 704 365.062518 704 365.062518 704Z" p-id="3319" fill="#ffffff"></path><path d="M512.0032 64C371.2032 64 256.0032 179.2 256.0032 320 256.0032 364.8 268.8032 409.6 288.0032 448L448.0032 723.2C486.4032 787.2 544.0032 787.2 576.0032 723.2L723.2032 460.8C748.8032 422.4 768.0032 371.2 768.0032 320 768.0032 179.2 652.8032 64 512.0032 64L512.0032 64ZM672.0032 416 544.0032 646.4C518.4032 691.2 505.6032 691.2 480.0032 646.4L345.6032 409.6C326.4032 384 320.0032 352 320.0032 313.6 320.0032 211.2 403.2032 128 512.0032 128 620.8032 128 704.0032 211.2 704.0032 313.6 704.0032 352 691.2032 384 672.0032 416L672.0032 416Z" p-id="3320" fill="#ffffff"></path></svg>
+                    <p className="footerinfo" id="footerStyle">
+                    Room 811, No.1295 Lu jia bang Road<br />
+                    Huang Pu District, Shanghai
+                    </p>
+                  </div>
+                  <div className="contactInfoD">
+                    <svg t="1594926710461" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="4415" width="30" height="30"><path d="M741.12 305.737143H276.114286L511.817143 528.457143z" fill="#ffffff" p-id="4416"></path><path d="M524.8 566.857143a18.651429 18.651429 0 0 1-25.417143 0.182857l-62.72-59.245714L256 668.525714v49.737143h512v-49.737143l-181.577143-161.645714L524.8 566.857143zM256 337.005714v282.514286l153.965714-136.96zM768 619.52V330.788571l-155.245714 150.491429z" fill="#ffffff" p-id="4417"></path><path d="M512 9.142857C234.24 9.142857 9.142857 234.24 9.142857 512S234.24 1014.857143 512 1014.857143 1014.857143 789.76 1014.857143 512 789.76 9.142857 512 9.142857z m292.571429 727.405714c0 10.057143-8.228571 18.285714-18.285715 18.285715H237.714286c-10.057143 0-18.285714-8.228571-18.285715-18.285715V287.451429c0-10.057143 8.228571-18.285714 18.285715-18.285715h548.571428c10.057143 0 18.285714 8.228571 18.285715 18.285715v449.097142z" fill="#ffffff" p-id="4418"></path></svg>
+                    <p className="footerinfo" id="footStyle">
+                    czj0603@foxmail.com
+                    </p>
+                  </div>
+                </div>
 
+                <div className="contactA">
+                  <h5 id="contacth5">IF YOU GOT ANY QUESTION</h5>
+                  <h5 id="contacth5">PLEASE DO NOT HESITATE TO SEND US A MESSAGE</h5>
+                  <form className="contactB">
+                    <div>
+                      <input id="contactF" type="text" placeholder="Your Name" size="60"></input>
+                    </div>
+                    <div>
+                      <input id="contactF" type="text" placeholder="Your Email" size="60"></input>
+                    </div>
+                    <div>
+                      <textarea placeholder="Message" rows="15" cols="51"></textarea>
+                    </div>
+                    <div>
+                      <input className="submit" type="submit" value="Send Message" size="10"></input>
+                    </div>
+                  </form>
+                  <div className="social">
+                    <img src="weibo.png"></img>
+                    <img src="facebook.png"></img>
+                    <img src="twitter.png"></img>
+                    <img src="instagram.png"></img>
+                    <img src="linkedin.png"></img>
+                  </div>
+                </div>
+
+
+                
+              </div>
+
+              <a name="client"></a>
               <div className="client">
                 <div className="clientTitle">
                   <h2>CLIENT</h2>
                 </div>
-
                 <table align="center">
                   <tbody>
                   <tr>
