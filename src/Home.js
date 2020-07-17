@@ -60,7 +60,7 @@ export default class Home extends Component{
               <div className="interesting"></div>
               <div className="service">
                 <h4>The Future has Begun</h4>
-                <h2>OUR SOLUTION SERVICES</h2>
+                <h2 id="title1">OUR SOLUTION SERVICES</h2>
                 <div className="magic">
                 <div className="magic-menu1">
                     <ul className="magic-ul">
@@ -99,7 +99,7 @@ export default class Home extends Component{
 
               <a name="team"></a>
               <div className="teaminfo">
-                <h2 id="teamTitle">TEAM</h2>
+                <h2 id="title2">TEAM</h2>
                 <div className="teamwrapper">
                   <div className="teamContent1">
                     <div className="nameCard">
@@ -122,7 +122,7 @@ export default class Home extends Component{
                 </div>
               </div>
               <div className="contact">
-                <h2>CONTACT US</h2>
+                <h2 id="title1">CONTACT US</h2>
                 <h4>Get in touch with us!</h4>
                 <div className="contactInfo">
                   <div className="contactInfoD">
@@ -180,7 +180,7 @@ export default class Home extends Component{
               <a name="client"></a>
               <div className="client">
                 <div className="clientTitle">
-                  <h2>CLIENT</h2>
+                  <h2 id="title2">CLIENT</h2>
                 </div>
                 <table align="center">
                   <tbody>
