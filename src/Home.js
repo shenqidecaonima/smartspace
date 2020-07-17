@@ -60,7 +60,7 @@ export default class Home extends Component{
               <div className="interesting"></div>
               <div className="service">
                 <h4>The Future has Begun</h4>
-                <h2 id="title1">OUR SOLUTION SERVICES</h2>
+                <h2>OUR SOLUTION SERVICES</h2>
                 <div className="magic">
                 <div className="magic-menu1">
                     <ul className="magic-ul">
@@ -125,7 +125,7 @@ export default class Home extends Component{
                 <h2 id="title1">CONTACT US</h2>
                 <h4>Get in touch with us!</h4>
                 <div className="contactInfo">
-                  <div className="contactInfoD">
+                  <div id="contactInfoD" >
                     <svg t="1594926536993" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="2323" width="30" height="30"><path d="M745.6 32H278.4C230.4 32 192 73.6 192 121.6v780.8C192 950.4 230.4 992 278.4 992h464c48 0 86.4-41.6 86.4-89.6V121.6C832 73.6 793.6 32 745.6 32z m28.8 870.4c0 16-12.8 28.8-28.8 28.8H278.4c-16 0-28.8-12.8-28.8-28.8V121.6c0-16 12.8-28.8 28.8-28.8h48l22.4 32c9.6 16 28.8 25.6 48 25.6h227.2c19.2 0 38.4-9.6 48-25.6l22.4-32h48c16 0 28.8 12.8 28.8 28.8v780.8z" p-id="2324" fill="#ffffff"></path><path d="M598.4 841.6h-176c-16 0-28.8 12.8-28.8 28.8s12.8 28.8 28.8 28.8h176c16 0 28.8-12.8 28.8-28.8s-12.8-28.8-28.8-28.8z" p-id="2325" fill="#ffffff"></path></svg>
                     <p className="footerinfo" id="footerStyle">
                     Twitter：smart space8<br />
@@ -139,7 +139,7 @@ export default class Home extends Component{
                     Huang Pu District, Shanghai
                     </p>
                   </div>
-                  <div className="contactInfoD">
+                  <div id="contactInfoD">
                     <svg t="1594926710461" class="icon" viewBox="0 0 1024 1024" version="1.1" p-id="4415" width="30" height="30"><path d="M741.12 305.737143H276.114286L511.817143 528.457143z" fill="#ffffff" p-id="4416"></path><path d="M524.8 566.857143a18.651429 18.651429 0 0 1-25.417143 0.182857l-62.72-59.245714L256 668.525714v49.737143h512v-49.737143l-181.577143-161.645714L524.8 566.857143zM256 337.005714v282.514286l153.965714-136.96zM768 619.52V330.788571l-155.245714 150.491429z" fill="#ffffff" p-id="4417"></path><path d="M512 9.142857C234.24 9.142857 9.142857 234.24 9.142857 512S234.24 1014.857143 512 1014.857143 1014.857143 789.76 1014.857143 512 789.76 9.142857 512 9.142857z m292.571429 727.405714c0 10.057143-8.228571 18.285714-18.285715 18.285715H237.714286c-10.057143 0-18.285714-8.228571-18.285715-18.285715V287.451429c0-10.057143 8.228571-18.285714 18.285715-18.285715h548.571428c10.057143 0 18.285714 8.228571 18.285715 18.285715v449.097142z" fill="#ffffff" p-id="4418"></path></svg>
                     <p className="footerinfo" id="footStyle">
                     czj0603@foxmail.com

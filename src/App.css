@@ -369,6 +369,7 @@ p{
 }
 #title1 {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 5px;
 }
 #title2 {
   font-family: 'Inconsolata', monospace;
@@ -430,9 +431,17 @@ p{
   position: relative;
   display: flex;
   text-align: center;
+  padding-left: 270px;
 }
 .contactInfoD {
-  margin: 120px;
+  border-right: solid 3px #957B5F;
+  border-left: solid 3px #957B5F;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+#contactInfoD {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .contactA {
   position: relative;
