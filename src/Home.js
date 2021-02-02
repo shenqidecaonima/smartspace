@@ -170,7 +170,8 @@ export default class Home extends Component{
                     <img src="facebook.png"></img>
                     <img src="twitter.png"></img>
                     <img src="instagram.png"></img>
-                    <a href="Wechat.jpeg" target="view-frame"><img src="linkedin.png"></img></a>
+                    <img src="linkedin.png"></img>
+                    <a href="Wechat.jpeg" target="view-frame"><img src="wechat.png"></img></a>
                   </div>
                 </div>
 
