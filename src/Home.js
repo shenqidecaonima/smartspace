@@ -166,11 +166,11 @@ export default class Home extends Component{
                     </div>
                   </form>
                   <div className="social">
-                    <img src="weibo.png"></img>
+                    <a href="https://weibo.com/u/7386208963" target="view-frame"><img src="weibo.png"></img></a>
                     <img src="facebook.png"></img>
                     <img src="twitter.png"></img>
                     <img src="instagram.png"></img>
-                    <img src="linkedin.png"></img>
+                    <a href="Wechat.jpeg" target="view-frame"><img src="linkedin.png"></img></a>
                   </div>
                 </div>
 
