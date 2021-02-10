@@ -60,7 +60,7 @@ export default class Home extends Component{
               <div className="interesting"></div>
               <div className="service">
                 <h4>The Future has Begun</h4>
-                <h2 id="title2">OUR SOLUTION SERVICES</h2>
+                <h2 id="title1">OUR SOLUTION SERVICES</h2>
                 <div className="magic">
                 <div className="magic-menu1">
                     <ul className="magic-ul">
@@ -99,7 +99,7 @@ export default class Home extends Component{
 
               <a name="team"></a>
               <div className="teaminfo">
-                <h2 id="title2">TEAM</h2>
+                <h2 id="title1">TEAM</h2>
                 <div className="teamwrapper">
                   <div className="teamContent1">
                     <div className="nameCard">
@@ -208,13 +208,13 @@ export default class Home extends Component{
                       <img src="/cl/Picture7.png" width="100px" height="100px" alt="client"/>
                     </th>
                     <th>
-                      <img src="/cl/Picture8.png" width="110px" height="100px" alt="client"/>
+                      <img src="/cl/Picture8.png" width="110px" height="85px" alt="client"/>
                     </th>
                     <th>
                       <img src="/cl/Picture9.png" width="130px" height="100px" alt="client"/>
                     </th>
                     <th>
-                      <img src="/cl/Picture10.png" width="140px" height="60px" alt="client"/>
+                      <img src="/cl/Picture10.png" width="120px" height="60px" alt="client"/>
                     </th>
                     <th>
                       <img src="/cl/Picture6.png" width="100px" height="70px" alt="client"/>
@@ -231,8 +231,8 @@ export default class Home extends Component{
                 <section id="footerSection">
                   <h5 className="footerTitle" id="footerStyle">ADDRESS</h5>
                   <p className="footerinfo" id="footerStyle">
-                    Room 811, No.1295 Lu jia bang Road<br />
-                    Huang Pu District, Shanghai
+                  Room 1566, Building 1, 222 Hubin Road,<br/>
+                  Link Square, Shanghai, China
                   </p>
                 </section>
                 <section id="footerSection">
