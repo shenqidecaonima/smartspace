@@ -59,6 +59,13 @@ export default class Home extends Component{
                     </ul>
                   </nav>
               </section>
+              <li className="Lang" >
+              <img src="/Lang.png" width="20px" height="20px" alt="client"/>
+              <ul className="LangCard">
+                <a href="./en"><p>English</p></a>
+                <a href="./"><p>中文</p></a>
+              </ul>
+              </li>
               </div>
 
               <div className="thoseWords">
@@ -263,6 +270,7 @@ export default class Home extends Component{
                   <h5 className="footerTitle" id="footerStyle">CONTACTS</h5>
                   <p className="footerinfo" id="footerStyle">
                     Email: service@smartspace.ltd<br />
+                    Phone: 400-117-1204<br />
                     WeChat official account: SmartSpace 讯楼<br />
                     WeChat Channel ：SmartSpace讯楼科技
                   </p>

@@ -29,6 +29,22 @@ html, body{
   padding:0,0,0,0;
 }
 
+.Lang {
+  position:relative;
+  top: 40px;
+}
+.LangCard {
+  position: relative;
+  visibility: hidden;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  top: -20px;
+}
+.Lang:hover .LangCard{
+  visibility: visible;
+
+}
 .content {
   position: relative;
   width: 100%;
@@ -44,9 +60,10 @@ html, body{
 }
 
 .topBar{
-  width: 100%;
   height: auto;
-  display: flex;
+  display:flex;
+  margin: 0%;
+  padding: 0%;
 }
 
 .thoseWords {
@@ -79,6 +96,7 @@ html, body{
   position: relative;
   padding-top: 50px;
   margin-left: 400px;
+  
 }
 
 .navBar-link {
@@ -87,7 +105,7 @@ html, body{
 }
 
 a {
-  font-size: 20px;
+  font-size: 15px;
   font-family: 'Quicksand';
   color: white;
 }
