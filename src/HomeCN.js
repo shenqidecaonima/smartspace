@@ -63,7 +63,7 @@ export default class Home extends Component{
               <li className="Lang" >
               <img src="/Lang.png" width="20px" height="20px" alt="client"/>
               <ul className="LangCard">
-                <a href="./en"><p style="color:black">English</p></a>
+                <a href="./en"><p>English</p></a>
                 <a href="./"><p>中文</p></a>
               </ul>
               </li>
