@@ -170,7 +170,7 @@ export default class Home extends Component{
                 <div className="contactA">
                   <h5 id="contacth5">IF YOU GOT ANY QUESTION</h5>
                   <h5 id="contacth5">PLEASE DO NOT HESITATE TO SEND US A MESSAGE</h5>
-                  <form className="contactB">
+                  <form className="contactB" ref='emailForm'>
                   <div>
                       <input name='to_name' id="contactF" type="text" placeholder="Name" size="60"></input>
                     </div>
