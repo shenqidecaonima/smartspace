@@ -6,14 +6,16 @@ import emailjs from 'emailjs-com';
 export default class Home extends Component{
 
   onSubmit = () => {
-    console.log('1213')
     emailjs.sendForm('service_umaxxlh', 'template_us43naj', this.refs.emailForm, 'user_Cx1Im6uXDRBZldSXGHx4N')
     .then((result) => {
-        console.log(result.text);
+        if(result.text==="OK"){
+          alert("Success");
+        }
     }, (error) => {
         console.log(error.text);
     });
   }
+
 
   render(){
     return(

@@ -5,32 +5,11 @@ import emailjs from 'emailjs-com';
 export default class Home extends Component{
 
   onSubmit = () => {
-    // debugger;
-    // const client = new SMTPClient({
-    //   user: '876138716@qq.com',
-    //   password: 'passwordylnqclxuqdtybcda',
-    //   host: 'smtp-qq.com',
-    //   ssl: true
-    // });
-    
-    // const message = new Message({
-    //   text: 'i hope this works',
-    //   from: 'you <876138716@qq.com>',
-    //   to: 'you <876138716@qq.com>',
-    //   subject: 'testing emailjs',
-    // });
-    
-    // debugger;
-    // // send the message and get a callback with an error or details of the message that was sent
-    // client.send(message, (err, message) => {
-
-    //   console.log(err || message);
-    // });
-    // debugger
-    console.log('1213')
     emailjs.sendForm('service_umaxxlh', 'template_us43naj', this.refs.emailForm, 'user_Cx1Im6uXDRBZldSXGHx4N')
     .then((result) => {
-        console.log(result.text);
+        if(result.text==="OK"){
+          alert("成功");
+        }
     }, (error) => {
         console.log(error.text);
     });
