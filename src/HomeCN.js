@@ -1,31 +1,41 @@
 import React, {Component} from 'react';
 import BestMenu from "./BestMenu";
-import { SMTPClient, Message } from 'emailjs';
+import emailjs from 'emailjs-com';
 
-  function Email(params) {
-    const client = new SMTPClient({
-      user: '876138716@qq.com',
-      password: 'passwordylnqclxuqdtybcda',
-      host: 'smtp-qq.com',
-      ssl: true
-    });
+export default class Home extends Component{
+
+  onSubmit = () => {
+    // debugger;
+    // const client = new SMTPClient({
+    //   user: '876138716@qq.com',
+    //   password: 'passwordylnqclxuqdtybcda',
+    //   host: 'smtp-qq.com',
+    //   ssl: true
+    // });
     
-    const message = new Message({
-      text: 'i hope this works',
-      from: 'you <876138716@qq.com>',
-      to: 'you <876138716@qq.com>',
-      subject: 'testing emailjs',
-    });
+    // const message = new Message({
+    //   text: 'i hope this works',
+    //   from: 'you <876138716@qq.com>',
+    //   to: 'you <876138716@qq.com>',
+    //   subject: 'testing emailjs',
+    // });
     
-    // send the message and get a callback with an error or details of the message that was sent
-    client.send(message, (err, message) => {
-      console.log(err || message);
+    // debugger;
+    // // send the message and get a callback with an error or details of the message that was sent
+    // client.send(message, (err, message) => {
+
+    //   console.log(err || message);
+    // });
+    // debugger
+    console.log('1213')
+    emailjs.sendForm('service_umaxxlh', 'template_us43naj', this.refs.emailForm, 'user_Cx1Im6uXDRBZldSXGHx4N')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
     });
   }
 
-
-
-export default class Home extends Component{
   render(){
     return(
       <div>
@@ -183,18 +193,18 @@ export default class Home extends Component{
                 <div className="contactA">
                   <h5 id="contacth5">欢迎提问</h5>
                   <h5 id="contacth5"></h5>
-                  <form className="contactB">
+                  <form className="contactB" ref='emailForm'>
                     <div>
-                      <input id="contactF" type="text" placeholder="姓名" size="60"></input>
+                      <input name='to_name' id="contactF" type="text" placeholder="姓名" size="60"></input>
                     </div>
                     <div>
-                      <input id="contactF" type="text" placeholder="邮箱" size="60"></input>
+                      <input name='from_name' id="contactF" type="text" placeholder="邮箱" size="60"></input>
                     </div>
                     <div>
-                      <textarea placeholder="请输入" rows="15" cols="51"></textarea>
+                      <textarea name='message' placeholder="请输入" rows="15" cols="51"></textarea>
                     </div>
                     <div>
-                      <input className="submit" type="submit" value="提交" size="10"></input>
+                      <input onClick={() => this.onSubmit()} className="submit"  value="提交" size="10"></input>
                     </div>
                   </form>
                   <div className="social">

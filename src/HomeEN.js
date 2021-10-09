@@ -1,31 +1,20 @@
 import React, {Component} from 'react';
 import BestMenu from "./BestMenu";
-import { SMTPClient, Message } from 'emailjs';
-
-  function Email(params) {
-    const client = new SMTPClient({
-      user: '876138716@qq.com',
-      password: 'passwordylnqclxuqdtybcda',
-      host: 'smtp-qq.com',
-      ssl: true
-    });
-    
-    const message = new Message({
-      text: 'i hope this works',
-      from: 'you <876138716@qq.com>',
-      to: 'you <876138716@qq.com>',
-      subject: 'testing emailjs',
-    });
-    
-    // send the message and get a callback with an error or details of the message that was sent
-    client.send(message, (err, message) => {
-      console.log(err || message);
-    });
-  }
-
+import emailjs from 'emailjs-com';
 
 
 export default class Home extends Component{
+
+  onSubmit = () => {
+    console.log('1213')
+    emailjs.sendForm('service_umaxxlh', 'template_us43naj', this.refs.emailForm, 'user_Cx1Im6uXDRBZldSXGHx4N')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+  }
+
   render(){
     return(
       <div>
@@ -182,17 +171,17 @@ export default class Home extends Component{
                   <h5 id="contacth5">IF YOU GOT ANY QUESTION</h5>
                   <h5 id="contacth5">PLEASE DO NOT HESITATE TO SEND US A MESSAGE</h5>
                   <form className="contactB">
-                    <div>
-                      <input id="contactF" type="text" placeholder="Your Name" size="60"></input>
+                  <div>
+                      <input name='to_name' id="contactF" type="text" placeholder="Name" size="60"></input>
                     </div>
                     <div>
-                      <input id="contactF" type="text" placeholder="Your Email" size="60"></input>
+                      <input name='from_name' id="contactF" type="text" placeholder="Email" size="60"></input>
                     </div>
                     <div>
-                      <textarea placeholder="Message" rows="15" cols="51"></textarea>
+                      <textarea name='message' placeholder="Message" rows="15" cols="51"></textarea>
                     </div>
                     <div>
-                      <input className="submit" type="submit" value="Send Message" size="10"></input>
+                      <input onClick={() => this.onSubmit()} className="submit"  value="Submit" size="10"></input>
                     </div>
                   </form>
                   <div className="social">
